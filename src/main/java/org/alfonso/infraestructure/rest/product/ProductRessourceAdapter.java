@@ -22,7 +22,7 @@ public class ProductRessourceAdapter
         List<Price> productList = createProductRequest.getPriceDTOList().stream()
                 .map(it-> createPriceDTOToDomain(it)).toList();
 
-        return new Product(productId, productName,);
+        return new Product(productId, productName, productList);
     }
 
     public CreateProductRequest toRessource (Product product)
